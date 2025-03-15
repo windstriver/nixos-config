@@ -74,6 +74,7 @@
     vim
     gcc
     gnumake
+    wireguard-tools
   ];
 
   system.stateVersion = "24.11";

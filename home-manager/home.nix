@@ -83,21 +83,17 @@
   };
 
   # Let Home Manager install and manage itself.
-  programs.home-manager = {
-    enable = true;
-  };
+  programs.home-manager.enable = true;
+
+  # Fish
+  programs.fish.enable = true;
+  programs.fish.shellInit = ''set fish_greeting ""'';
 
   # Git
-  programs.git = {
-    enable = true;
-    userName = "windstriver";
-    userEmail = "yongwang.ttu@gmail.com";
-  };
+  programs.git.enable = true;
 
   # Neovim
-  programs.neovim = {
-    enable = true;
-  };
+  programs.neovim.enable = true;
 
   # Emacs
   programs.emacs = {
