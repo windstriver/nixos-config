@@ -40,11 +40,15 @@
     pkgs.fd
     pkgs.ripgrep
     pkgs.fzf
+    pkgs.bat
     pkgs.nodejs_23
     pkgs.aria2
     pkgs.mpv
     pkgs.iosevka
     pkgs.noto-fonts-cjk-sans
+    pkgs.nwg-look
+    pkgs.hyprcursor
+    pkgs.hyprpaper
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -80,17 +84,25 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
+    SHELL = "fish";
   };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  # Fish
-  programs.fish.enable = true;
-  programs.fish.shellInit = ''set fish_greeting ""'';
+  # cursor theme
+  # home.pointerCursor = {
+  #     name = "Catppuccin-Mocha-Dark-Cursor";
+  #    size = 24;
+  #    package = pkgs.catppuccin-cursors.mochaDark;
+  # };
 
   # Git
-  programs.git.enable = true;
+  programs.git = {
+    enable = true;
+    userName = "windstriver";
+    userEmail = "yongwang.ttu@gmail.com";
+  };
 
   # Neovim
   programs.neovim.enable = true;
