@@ -60,6 +60,14 @@
     shell = pkgs.fish;
   };
 
+
+  # Dynamic linking
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+        # add any missing dynamic libraries here
+    ];
+  };
   # Install firefox.
   programs.firefox.enable = true;
 
