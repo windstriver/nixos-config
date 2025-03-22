@@ -44,8 +44,13 @@
     pkgs.nodejs_23
     pkgs.aria2
     pkgs.mpv
-    pkgs.iosevka
-    pkgs.noto-fonts-cjk-sans
+    #pkgs.iosevka
+    pkgs.maple-mono-NF
+    #pkgs.merriweather
+    pkgs.roboto
+    pkgs.roboto-serif
+    pkgs.roboto-mono
+    pkgs.lxgw-wenkai-screen
     pkgs.nwg-look
     pkgs.hyprcursor
     pkgs.hyprpaper
