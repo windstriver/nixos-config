@@ -45,11 +45,10 @@
     pkgs.aria2
     pkgs.mpv
     #pkgs.iosevka
-    pkgs.maple-mono-NF
+    pkgs.maple-mono.NF
+    pkgs.eb-garamond
+    pkgs.lato
     #pkgs.merriweather
-    pkgs.roboto
-    pkgs.roboto-serif
-    pkgs.roboto-mono
     pkgs.lxgw-wenkai-screen
     pkgs.nwg-look
     pkgs.hyprcursor

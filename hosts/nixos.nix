@@ -68,6 +68,7 @@
         # add any missing dynamic libraries here
     ];
   };
+
   # Install firefox.
   programs.firefox.enable = true;
 
@@ -77,6 +78,11 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # steam
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamescope.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -85,6 +91,8 @@
     gcc
     gnumake
     wireguard-tools
+    vulkan-tools
+    vulkan-loader
   ];
 
   system.stateVersion = "24.11";
