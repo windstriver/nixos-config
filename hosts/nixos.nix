@@ -52,7 +52,7 @@
     #media-session.enable = true;
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+ # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.yong = {
     isNormalUser = true;
     description = "yong";
@@ -60,6 +60,25 @@
     shell = pkgs.fish;
   };
 
+  # Fish shell
+  programs.fish.enable = true;
+
+  # Install firefox.
+  programs.firefox.enable = true;
+
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
+  # List packages installed in system profile. To search, run:
+  # $ nix search wget
+  environment.systemPackages = with pkgs; [
+    vim
+    gcc
+    gnumake
+    vulkan-tools
+    vulkan-loader
+    libglvnd
+  ];
 
   # Dynamic linking
   programs.nix-ld = {
@@ -69,31 +88,10 @@
     ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
-  # Fish shell
-  programs.fish.enable = true;
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   # steam
   programs.steam.enable = true;
   programs.steam.gamescopeSession.enable = true;
   programs.gamescope.enable = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    kitty
-    vim
-    gcc
-    gnumake
-    wireguard-tools
-    vulkan-tools
-    vulkan-loader
-  ];
 
   system.stateVersion = "24.11";
 }
