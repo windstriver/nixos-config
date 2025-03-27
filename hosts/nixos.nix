@@ -75,6 +75,7 @@
     vim
     gcc
     gnumake
+    wireguard-tools
     vulkan-tools
     vulkan-loader
     libglvnd
