@@ -27,17 +27,17 @@
   swapDevices = [ ];
 
   # Mount the disk
-  fileSystems."/data" = {
+  fileSystems."/home/yong/Data" = {
     device = "/dev/disk/by-uuid/a1e90d24-e250-4b3c-80c6-47cf928d673b";
     fsType = "ext4";
   };
 
-  fileSystems."/media" = {
+  fileSystems."/home/yong/Media" = {
     device = "/dev/disk/by-uuid/7d5aacef-252e-46a8-84a0-aa1282cb3258";
     fsType = "ext4";
   };
 
-  # fileSystems."/databak" = {
+  # fileSystems."/home/yong/Databak" = {
   #   device = "/dev/disk/by-uuid/4741a7f3-3cf7-4f74-8ae1-1127f5f07924";
   #   fsType = "ext4";
   # };
