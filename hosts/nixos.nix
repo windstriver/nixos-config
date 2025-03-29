@@ -75,6 +75,7 @@
     vim
     gcc
     gnumake
+    rustup
     wireguard-tools
     vulkan-tools
     vulkan-loader

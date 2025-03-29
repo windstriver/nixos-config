@@ -32,22 +32,25 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
-    kitty
+    alacritty
     ghostty
     stow
     fd
     ripgrep
     fzf
-    bat
+    htop
+    #bat
     nodejs_23
     aria2
+    ffmpeg
     mpv
     #iosevka
     maple-mono.NF
     eb-garamond
     lato
     #pkgs.merriweather
-    lxgw-wenkai-screen
+    lxgw-wenkai
+    lxgw-wenkai-tc
     nwg-look
     hyprcursor
     hyprpaper
