@@ -27,10 +27,10 @@
   swapDevices = [ ];
 
   # Mount the disk
-  fileSystems."/home/yong/Data" = {
-    device = "/dev/disk/by-uuid/a1e90d24-e250-4b3c-80c6-47cf928d673b";
-    fsType = "ext4";
-  };
+  # fileSystems."/home/yong/Data" = {
+  #   device = "/dev/disk/by-uuid/a1e90d24-e250-4b3c-80c6-47cf928d673b";
+  #   fsType = "ext4";
+  # };
 
   fileSystems."/home/yong/Media" = {
     device = "/dev/disk/by-uuid/7d5aacef-252e-46a8-84a0-aa1282cb3258";
@@ -52,4 +52,8 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
+  # Enable buletooth
+  hardware.bluetooth.enable = true;
+
 }

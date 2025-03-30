@@ -77,6 +77,7 @@
     gnumake
     rustup
     wireguard-tools
+    bluez
     vulkan-tools
     vulkan-loader
     libglvnd
