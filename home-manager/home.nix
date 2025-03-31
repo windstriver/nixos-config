@@ -32,28 +32,30 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+    # terminal
     alacritty
     ghostty
     stow
+    htop
     fd
     ripgrep
     fzf
-    htop
-    #bat
-    nodejs_23
     aria2
     ffmpeg
     mpv
-    #iosevka
+    # fonts
+    # iosevka
     maple-mono.NF
     eb-garamond
     lato
-    #pkgs.merriweather
     lxgw-wenkai
     lxgw-wenkai-tc
+    # desktop
     nwg-look
     hyprcursor
     hyprpaper
+    # env
+    nodejs_23
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

@@ -4,7 +4,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware/hardware-nixos.nix
-      ../modules/common.nix
       ../modules/networking.nix
       ../modules/nvidia.nix
       ../modules/hyprland.nix
@@ -75,12 +74,8 @@
     vim
     gcc
     gnumake
-    rustup
     wireguard-tools
     bluez
-    vulkan-tools
-    vulkan-loader
-    libglvnd
   ];
 
   # Dynamic linking
@@ -90,11 +85,6 @@
         # add any missing dynamic libraries here
     ];
   };
-
-  # steam
-  programs.steam.enable = true;
-  programs.steam.gamescopeSession.enable = true;
-  programs.gamescope.enable = true;
 
   system.stateVersion = "24.11";
 }
