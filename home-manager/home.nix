@@ -52,6 +52,7 @@
     lxgw-wenkai-tc
     # desktop
     nwg-look
+    waybar
     hyprcursor
     hyprpaper
     # env
