@@ -56,7 +56,17 @@
     hyprcursor
     hyprpaper
     # env
-    nodejs_23
+    # nodejs_23
+    (python3.withPackages (python-pkgs: with python-pkgs; [
+      numpy
+      pandas
+      matplotlib
+    ]))
+    # retro arch
+    (retroarch.withCores (cores: with cores; [
+      mgba
+    ]))
+
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
